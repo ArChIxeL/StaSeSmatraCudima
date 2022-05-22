@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Početna</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<style>
+	body {background-color:#0567a8;}
+.naslov{
+	font-family: lobster;
+
+	font-size: 70px;
+	color: #8ff244;
+text-align: center;
+
+}
+.vs{ height: 400px; 
+width: 730px; 
+float: top;
+display: block;
+margin: 0 auto;
+margin-top: 50px;
+transition: 0.3s;
+border-radius: 40px 40px 40px 40px;
+border: solid black 2px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  opacity: 0,7;
+  margin-top: -25px;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #65cffc;
+  color: white;
+}
+
+.dno{background-color: #333; margin-bottom: -100px; padding-left:80px ; color: #d8ded3; text-align: center; padding: 15px;
+opacity: 0.95;
+}
+
+.glavno{min-height: calc(108vh - 261px - 58px );}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="naslov"><p>ŠTA Se SMATRA ČUDiMA</p></div>
+<main class="glavno">
+	<div class="topnav">
+  <a class="active" href="index.html">Početna</a>
+  <a href="1strana.html">Prostrani Svemir</a>
+  <a href="2strana.html">Egipatske Piramide </a>
+  <a href="3strana.html">Fočanske Piramide</a>
+</div>
+	
+	<img class="vs" id="image" src=""> 
+	<div style="background-color:#65cffc ; padding:25px; margin: 35px; padding-left:30px;padding-right: 40px; opacity:0.8;" >
+	<p style="font-size: 22px;">
+Na svijetu postoji mnogo čuda, prirodnih, ali i mnogo čudesnih građevina. Šta je zapravo potrebno kako bi se neka građevina  ili prirodna ljepota nazvala svjetskim čudom? Ili bilo kakvim čudom? Da li je potrebno da ljudi počnu pričati o njima, da ih počnu posjećivati ili pisati o njima na društvenim mrežama? Danas u svijetu postoji mnogo čuda za koje se vjerovatno ne zna ili za njih zna jako malo ljudi. Šta se može uraditi da sva ta čuda dospiju na neku novu listu čuda? Šta je zapravo čudo? 
+	</p>
+</div>
+</main>
+
+<script type="text/javascript">
+	
+	let image = document.getElementById('image');
+let images = ['svemir2.jpg','slika1.jpg','piramide2.jpg','slika2.jpg','slika4.jpg', 'slika3.jpg','slika5.jpg', 'slika6.jpg','slika7.jpg','slika8.jpg','slika9.jpg','slika11.jpg']
+setInterval(function(){
+let random = Math.floor(Math.random() * 12);
+image.src = images[random];}, 600);
+</script>
+
+<footer class="dno">
+<p>Copyright &copy;</p>
+<p>J.A.</p>
+</footer>
+
+</body>
+</html>
